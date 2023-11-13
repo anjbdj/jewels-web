@@ -182,23 +182,24 @@
       <script src="../js/custom.js"></script>
       <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
       <script>
-            jQuery(function($){
-               var settings = {
-                 "async": true,
-                 "crossDomain": true,
-                 "url": "https://www.malabargoldanddiamonds.com/malabarprice/index/getrates/?country=IN&state=Kerala",
-                 "method": "GET",
-                 "headers": {
-                   "cache-control": "no-cache",
-                   "postman-token": "3a53d922-56b0-d71f-2566-d4ff7a4a94f9"
-                 }
-               }
-               console.log("before the javascript call");
-               $.ajax(settings).done(function (response) {
-                 console.log(response);
-               });
-               console.log("after the javascript call");
-            });
+         console.log("before the javascript call");
+         var data = null;
+
+         var xhr = new XMLHttpRequest();
+         xhr.withCredentials = true;
+
+         xhr.addEventListener("readystatechange", function () {
+           if (this.readyState === 4) {
+             console.log(this.responseText);
+           }
+         });
+
+         xhr.open("GET", "https://www.malabargoldanddiamonds.com/malabarprice/index/getrates/?country=IN&state=Kerala");
+         xhr.setRequestHeader("cache-control", "no-cache");
+         xhr.setRequestHeader("postman-token", "81452f1c-0cd0-b89e-5054-cb799aa319e6");
+
+         xhr.send(data);
+         console.log("after the javascript call");
       </script>
    </body>
 </html>
