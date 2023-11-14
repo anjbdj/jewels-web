@@ -1473,3 +1473,11 @@ background-position: center;
      border-radius: 168px;
     border: 32px solid #a61d3b;
 }
+
+.categories-wrap .col-sm-2{
+     background-color: #ad1939;
+     padding: 20px;
+}
+.categories-wrap .col-sm-2:hover{
+     background-color: black;
+}
