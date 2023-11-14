@@ -1476,8 +1476,10 @@ background-position: center;
 
 .categories-wrap .col-sm-2{
      background-color: #ad1939;
-     padding: 20px;
+     padding: 20px 40px;
+     border-left: 1px solid #000;
 }
 .categories-wrap .col-sm-2:hover{
      background-color: black;
+     transition: .2s;
 }
