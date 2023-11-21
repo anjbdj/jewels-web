@@ -1,0 +1,164 @@
+.header-wrapper .header {
+    height: 50px;
+    background-color: #00adbc;
+}
+
+.header-wrapper .header a{
+    color: #fff;
+}
+.header-wrapper .header a:hover{
+    color: #fff;
+}
+
+body{
+    min-height: 600px;
+    overflow-x: hidden;
+}
+
+p{
+    margin-top: 0px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+.homepage-feature {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.homepage-feature .col-sm-3{
+    border-radius: 12px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.homepage-feature .content-wrapper{
+    padding: 30px;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 200px;
+}
+.homepage-feature .img-wrapper{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top:10px;
+}
+.homepage-feature .content-wrapper .header-text{
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.homepage-feature .content-wrapper .sentence{
+    font-size: 14px;
+}
+.navbar-toggler{
+    padding: 0.15rem 0.25rem;
+}
+.navbar-light .navbar-toggler{
+    border-color: #ffffff;
+    border-radius: 0px;
+}
+.navbar-collapse.show{
+    background: #59cad3;
+    padding: 10px 20px;
+    margin-top: 2px;
+}
+/* .navbar-collapse{
+    background: #59cad3;
+    padding: 10px 20px;
+    margin-top: 2px;
+} */
+.navbar-light .navbar-nav .nav-link{
+    color:#ffffff
+}
+.navbar-light .navbar-toggler-icon{
+    background-image: url("./../images/home/menu_hamburger_32.png")
+}
+
+
+
+.footer{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #7665a0;
+}
+
+h1.heading{
+    font-size: 30px;
+    line-height: 36px;
+}
+
+p.heading{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    
+}
+
+ul, ol{
+    padding-inline-start: 20px;
+}
+
+
+ul.nostyle, ol.nostyle{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;   
+}
+ul.nostyle li, ol.nostyle li{
+    list-style: none;
+    
+}
+ul.nostyle li img, 
+ol.nostyle li img {
+    margin-bottom: 15px;
+}
+
+.question_answer_wrap .answer{
+    display: none;
+}
+
+.question_answer_wrap span.question_number {
+     display: block;
+     font-weight: 600;
+     font-size: 20px;
+}
+
+.question_answer_wrap{
+    border-bottom:  1px solid #7665a0;
+    padding-bottom: 10px;
+}
+.question_answer_wrap span.show_answer {
+    
+}
+
+.navbar-collapse.collapse.show{
+    z-index: 99999;
+}
+
+@media only screen and (max-width: 767px) {
+    .stats-image-wrap img{
+        max-width: 100%;
+    }  
+    .container-fluid.header .col-sm-12{
+        padding-right: 0px;
+        padding-left: 0px;
+    }    
+    .container-fluid.header .navbar.navbar-expand-lg{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .header a.navbar-brand{
+        margin-left: 20px;
+    }
+    .navbar-toggler{
+        margin-right: 20px;
+    }
+}
