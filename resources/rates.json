@@ -1,0 +1,11 @@
+{
+	"country" : "INDIA",
+	"country_code" : "IN",
+	"gold" : {
+		"prices" : {
+			"22kt" : 100,
+			"24kt" : 150,
+			"date" : "25-11-2023"
+		}
+	}
+}
