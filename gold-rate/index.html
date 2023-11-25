@@ -119,7 +119,7 @@
                 <div class="learn-subject-box" style="background-color: #b9b238;">
                     <div class="box-content">    
                         <h2 style="font-size: 50px; color:#b10808;">Today's Gold Rate</h2>
-                        <h3  style="font-size: 35px; color:#000;">5,710.00 INR (22KT)</h3>
+                        <h3 id="njo_gold_22car_price" style="font-size: 35px; color:#000;"></h3>
                     </div>
                 </div>
             </div>
@@ -147,5 +147,27 @@
    <script src="../js/jquery.slim.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
    <script src="../js/custom.js"></script>
+   <script>
+      
+      window.addEventListener("load", (event) => {  
+          var ratesURL = "https://noveljewels.online/resources/rates.json";
+          var gold_22_car_rate,gold_24_car_rate;
+          fetch(ratesURL)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (rates) {
+               console.log(rates);
+               gold_22_car_rate = rates.gold.prices.kt22.toLocaleString('en-IN') + " INR (22KT)";
+               gold_24_car_rate = rates.gold.prices.kt24;
+               var njo_gold_22car_html = document.getElementById('njo_gold_22car_price');
+               njo_gold_22car_html.innerHTML = gold_22_car_rate;
+
+            })
+            .catch(function (error) {
+                console.log('Error during fetch: ' + error.message);
+            });
+      });
+   </script>
 </body>
 </html>
