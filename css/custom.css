@@ -161,6 +161,7 @@ ol.nostyle li img {
         background: #59cad3;
         padding: 10px 20px;
         margin-top: 2px;
+        z-index: 99999;
     }
 }
 
