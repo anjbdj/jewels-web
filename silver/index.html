@@ -4,7 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Best Silver Jewellery | NJO | Novel Jewels Online"/>
-
+         <meta name="keywords" content="Silver Novel Jewels Online, Pure gold and silver, silver coin, gold coin">
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="../images/favicon/apple-touch-icon-57x57.png" />
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/favicon/apple-touch-icon-114x114.png" />
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/favicon/apple-touch-icon-72x72.png" />
@@ -110,12 +110,10 @@
         </div>
     </div>
 
-    <div class="container-fluid " style="padding: 30px;;">
+    <div class="container-fluid" >
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h1>Buy Gold the Smart Way</h1> 
-                <p>Buying gold is a crucial decision, as it is very expensive and involves the payment of your hard earned money</p>
-                <p>Be careful of the gold purity, gold price and the making charges</p>
+                <h1>Buy Fine Silver Products</h1> 
             </div>
         </div>
     </div>
@@ -135,69 +133,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="learn-subject-box" style="background-color: #FDB692;">
-                    <a href="/https://www.melorra.com/offers/" >
-                        <img src="https://photos.melorra.com/dev/banner/Homepage-Banner_Desktop_cef4dbf33c.jpg" />
-                    </a>
-                    <div class="box-content">    
-                        <p>Offer From Melorra</p>
-                        <a href="/https://www.melorra.com/offers/" target="_blank" class="btn btn-primary">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="col-sm-3">
-                <div class="learn-subject-box" style="background-color: #FDB692;">
-                    <a href="/physics" >
-                        <img src="images/physics.png" />
-                    </a>
-                    <div class="box-content">    
-                        <p>Physics</p>
-                        <a href="/physics/" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="learn-subject-box" style="background-color: #A9BD95;">
-                    <a href="/chemistry" >
-                        <img src="images/chemistry.png" />
-                    </a>
-                    <div class="box-content">    
-                        <p>Chemistry</p>
-                        <a href="/chemistry/" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="learn-subject-box" style="background-color:#E7CB71;">
-                    <a href="/maths" >
-                        <img src="images/math.png" />
-                    </a>
-                    <div class="box-content">    
-                        <p>Maths</p>
-                        <a href="/maths/" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="learn-subject-box" style="background-color:#957DAD;">
-                    <a href="/blog/" >
-                        <img src="images/blog.png" />
-                    </a>
-                    <div class="box-content">    
-                        <p>Blog</p>
-                        <a href="/blog/" class="btn btn-primary">Get Started</a>
-                    </div>
-                </div>
-            </div> -->
+          
             
-            <!-- <div class="col-sm-3">
-                <div class="learn-subject-box">
-                    <a href="#" >
-                        <img src="" />
-                    </a>
-                </div>
-            </div> -->
+            
 
         </div>
     </div>
@@ -218,5 +156,26 @@
    <script src="../js/jquery.slim.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
    <script src="../js/custom.js"></script>
+    <script>
+      
+      window.addEventListener("load", (event) => {  
+          var ratesURL = "https://noveljewels.online/resources/rates.json";
+          var gold_22_car_rate,gold_24_car_rate;
+          fetch(ratesURL)
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (rates) {
+               console.log(rates);
+               silver_999_rate = rates.silver.prices.kt999.toLocaleString('en-IN') ;
+               
+                console.log("silver 999 rate is " + silver_999_rate )
+
+            })
+            .catch(function (error) {
+                console.log('Error during fetch: ' + error.message);
+            });
+      });
+   </script>
 </body>
 </html>
