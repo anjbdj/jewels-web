@@ -25,6 +25,13 @@ img{
     max-width: 100%;
 }
 
+.dropdown-menu{
+    background-color: #00adbc;
+}
+
+.header-wrapper .header .dropdown-menu a:hover {
+    color: #9f3f0f;
+}
 
 .homepage-feature {
     text-align: center;
