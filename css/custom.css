@@ -33,6 +33,8 @@ img{
     color: #9f3f0f;
 }
 
+
+
 .homepage-feature {
     text-align: center;
     margin-bottom: 20px;
@@ -145,6 +147,11 @@ ol.nostyle li img {
 .navbar-collapse.collapse.show{
     z-index: 99999;
 }
+
+.links-wrap-container ul{
+   list-style: none;
+}
+
 
 @media only screen and (max-width: 767px) {
     .stats-image-wrap img{
