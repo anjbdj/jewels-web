@@ -39,7 +39,7 @@
              "@context": "http://schema.org",  
              "@type": "Organization",  
              "url": "https://noveljewels.online/",  
-             "name": "Novel Jewels Online",  
+             "name": "Novel Jewels Online Silver",  
              "logo": {  
              "@type": "ImageObject",  
              "url": "https://noveljewels.online/images/logo.png"  
@@ -198,21 +198,10 @@
                         <img src="./images/silver-bar-500-gms.png" />
                     <div class="box-content">    
                         <p>Silver Bar 500 gms</p>
-                        <a href="https://amzn.to/3T1PeLR" target="_blank" class="btn btn-success"> Buy Now</a>
+                        
                     </div>
                 </div>
-            </div>
-
-            <div class="col-sm-3">
-                <div class="learn-subject-box" style="background-color: #0c4e56;">
-                       <a href="https://www.amazon.in/ACPL-Precious-Moments-Hallmarked-darbar/dp/B0B6BQ4N7R?crid=3AW6HQOEA1M6X&keywords=ram%2Bsilver%2Bcoin&psr=EY17&qid=1701162573&s=todays-deals&sprefix=ram%2Bsilver%2Bcoin%2Ctodays-deals%2C203&sr=1-1&th=1&linkCode=li2&tag=anajalistore-21&linkId=47a0cec83d4b6ae0a08c3ac7768f7c7f&language=en_IN&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B0B6BQ4N7R&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=anajalistore-21&language=en_IN" ></a><img src="https://ir-in.amazon-adsystem.com/e/ir?t=anajalistore-21&language=en_IN&l=li2&o=31&a=B0B6BQ4N7R" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-                </div>
-            </div>
-
-
-         
-           
-            
+            </div> 
 
         </div>
     </div>
@@ -241,26 +230,6 @@
    <script src="../js/jquery.slim.min.js"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
    <script src="../js/custom.js"></script>
-    <script>
-      
-      window.addEventListener("load", (event) => {  
-          var ratesURL = "https://noveljewels.online/resources/rates.json";
-          var gold_22_car_rate,gold_24_car_rate;
-          fetch(ratesURL)
-            .then(function (response) {
-                return response.json();
-            })
-            .then(function (rates) {
-               console.log(rates);
-               silver_999_rate = rates.silver.prices.kt999.toLocaleString('en-IN') ;
-               
-                console.log("silver 999 rate is " + silver_999_rate )
 
-            })
-            .catch(function (error) {
-                console.log('Error during fetch: ' + error.message);
-            });
-      });
-   </script>
 </body>
 </html>
