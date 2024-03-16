@@ -152,7 +152,7 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="learn-subject-box" style="background-color: #9b0e7f;">
                         <img src="./images/silver-anklet-1.png" />
                     <div class="box-content">    
@@ -160,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="learn-subject-box" style="background-color: #0d1054;">
                         <img src="./images/silver-anklet-2.png" />
                     <div class="box-content">    
@@ -168,7 +168,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-4">
                 <div class="learn-subject-box" style="background-color: #24bf47;">
                         <img src="./images/silver-anklet-3.png" />
                     <div class="box-content">    
